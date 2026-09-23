@@ -1,0 +1,107 @@
+# Supply Chain SNA — Default Configuration
+# All parameters are configurable via this file or CLI overrides.
+
+seed: 42
+dataset_version: "v1"
+generator_version: "1.0.0"
+
+network:
+  organizations: 1000
+  months: 24
+  start_date: "2024-01-01"
+  transactions_per_month_per_edge: 3
+  target_edges: 5000
+
+organization_types:
+  supplier: 0.30
+  manufacturer: 0.15
+  distributor: 0.20
+  warehouse: 0.10
+  logistics_provider: 0.10
+  retailer: 0.15
+
+regions:
+  - North
+  - South
+  - East
+  - West
+  - Central
+
+industries:
+  - Electronics
+  - Pharmaceuticals
+  - Automotive
+  - Food_Beverage
+  - Textiles
+  - Chemicals
+
+size_categories:
+  - Small
+  - Medium
+  - Large
+  - Enterprise
+
+products:
+  - Electronics_Components
+  - Raw_Chemicals
+  - Pharmaceutical_Ingredients
+  - Auto_Parts
+  - Food_Ingredients
+  - Textile_Materials
+  - Finished_Electronics
+  - Finished_Pharmaceuticals
+  - Finished_Auto
+  - Finished_Food
+  - Finished_Textiles
+
+# Structural features to plant
+planted_structures:
+  num_hubs: 5
+  num_bridges: 10
+  num_communities: 5           # corresponds to regions
+  num_dependency_groups: 3     # hidden dependency clusters
+  hub_connectivity_multiplier: 5.0   # hubs have N times more connections
+  bridge_inter_community_links: 4    # bridges connect to N different communities
+
+# Temporal events
+temporal:
+  organization_entry_rate: 0.02     # fraction of orgs entering per month
+  organization_exit_rate: 0.01      # fraction becoming inactive per month
+  relationship_new_rate: 0.03       # new edges per month fraction
+  relationship_drop_rate: 0.01      # edges dropped per month fraction
+  disruption_months: [12, 18]       # months with disruption events
+  seasonal_peak_months: [3, 9]      # March and September peaks
+
+# Resilience experiment parameters
+resilience:
+  removal_fractions: [0.01, 0.02, 0.05, 0.10, 0.15, 0.20, 0.30]
+  random_seeds: [42, 123, 456, 789, 1337]
+
+# Centrality parameters
+centrality:
+  eigenvector_max_iter: 1000
+  eigenvector_tol: 1.0e-6
+  pagerank_alpha: 0.85
+  pagerank_max_iter: 1000
+  pagerank_tol: 1.0e-6
+  betweenness_normalized: true
+
+# Community detection
+community:
+  algorithm: louvain
+  louvain_resolution: 1.0
+  random_state: 42
+
+# Dashboard
+dashboard:
+  max_nodes_display: 500
+  top_n_centrality: 20
+
+# Output paths
+output:
+  data_dir: "data/synthetic"
+  graph_dir: "data/processed"
+  reports_dir: "reports"
+  figures_dir: "reports/figures"
+  results_dir: "reports/results"
+  tables_dir: "reports/tables"

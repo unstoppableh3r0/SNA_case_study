@@ -1,0 +1,27 @@
+{
+  "algorithm": "louvain",
+  "num_communities": 16,
+  "community_sizes": {
+    "1": 90,
+    "13": 89,
+    "4": 75,
+    "11": 74,
+    "3": 71,
+    "5": 68,
+    "2": 67,
+    "8": 64,
+    "7": 63,
+    "6": 59,
+    "10": 57,
+    "14": 54,
+    "12": 52,
+    "0": 50,
+    "9": 50,
+    "15": 17
+  },
+  "modularity": 0.25243513995817374,
+  "inter_community_edges": 5624,
+  "total_edges": 7498,
+  "inter_community_fraction": 0.7500666844491864,
+  "note": "Applied on undirected projection of directed supply-chain graph"
+}

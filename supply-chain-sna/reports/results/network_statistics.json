@@ -1,0 +1,41 @@
+{
+  "num_nodes": 1000,
+  "num_edges": 7517,
+  "is_directed": true,
+  "density": 0.007524524524524525,
+  "avg_in_degree": 7.517,
+  "avg_out_degree": 7.517,
+  "avg_total_degree": 15.034,
+  "max_in_degree": 37,
+  "max_out_degree": 58,
+  "degree_distribution": {
+    "in": {
+      "min": 0,
+      "max": 37,
+      "mean": 7.517,
+      "std": 8.025690686788272,
+      "median": 6.0,
+      "p90": 18.100000000000023,
+      "p99": 31.0
+    },
+    "out": {
+      "min": 0,
+      "max": 58,
+      "mean": 7.517,
+      "std": 5.111722899375512,
+      "median": 8.0,
+      "p90": 12.0,
+      "p99": 18.0
+    }
+  },
+  "weakly_connected_components": 1,
+  "largest_wcc_size": 1000,
+  "largest_wcc_fraction": 1.0,
+  "strongly_connected_components": 599,
+  "largest_scc_size": 402,
+  "avg_clustering_undirected": 0.018618187410201055,
+  "clustering_note": "Computed on undirected projection of DiGraph",
+  "avg_path_length_largest_wcc": 2.8097577577577577,
+  "global_efficiency": 0.37617047046835733,
+  "reciprocity": 0.005055208194758547
+}

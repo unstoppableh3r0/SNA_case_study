@@ -1,0 +1,122 @@
+{
+  "rank_correlations": {
+    "total_degree_vs_betweenness": {
+      "spearman_r": 0.775277913732637,
+      "p_value": 2.331646821609598e-201
+    },
+    "total_degree_vs_pagerank": {
+      "spearman_r": 0.7461157142085109,
+      "p_value": 1.7251493550301047e-178
+    },
+    "betweenness_vs_pagerank": {
+      "spearman_r": 0.5775103762890075,
+      "p_value": 5.130860797999482e-90
+    },
+    "eigenvector_vs_pagerank": {
+      "spearman_r": 0.9657401396670137,
+      "p_value": 0.0
+    },
+    "betweenness_vs_closeness": {
+      "spearman_r": 0.4822709170259643,
+      "p_value": 2.226373959878076e-59
+    }
+  },
+  "top_by_degree": [
+    "MFG-00131",
+    "MFG-00028",
+    "MFG-00141",
+    "WHS-00080",
+    "DST-00116",
+    "WHS-00025",
+    "WHS-00026",
+    "WHS-00031",
+    "WHS-00038",
+    "DST-00147"
+  ],
+  "top_by_betweenness": [
+    "MFG-00131",
+    "WHS-00012",
+    "WHS-00068",
+    "WHS-00026",
+    "WHS-00086",
+    "WHS-00089",
+    "WHS-00064",
+    "WHS-00076",
+    "WHS-00020",
+    "WHS-00075"
+  ],
+  "top_by_pagerank": [
+    "RET-00032",
+    "RET-00029",
+    "WHS-00002",
+    "RET-00006",
+    "MFG-00147",
+    "RET-00067",
+    "DST-00057",
+    "WHS-00037",
+    "WHS-00064",
+    "WHS-00095"
+  ],
+  "bridge_without_hub_nodes": [
+    {
+      "node": "RET-00029",
+      "bridge_without_hub": -389,
+      "betweenness": 0.0,
+      "total_degree": 23
+    },
+    {
+      "node": "RET-00032",
+      "bridge_without_hub": -389,
+      "betweenness": 0.0,
+      "total_degree": 23
+    },
+    {
+      "node": "RET-00117",
+      "bridge_without_hub": -374,
+      "betweenness": 0.0,
+      "total_degree": 22
+    },
+    {
+      "node": "RET-00051",
+      "bridge_without_hub": -357,
+      "betweenness": 0.0,
+      "total_degree": 21
+    },
+    {
+      "node": "RET-00019",
+      "bridge_without_hub": -357,
+      "betweenness": 0.0,
+      "total_degree": 21
+    },
+    {
+      "node": "RET-00067",
+      "bridge_without_hub": -357,
+      "betweenness": 0.0,
+      "total_degree": 21
+    },
+    {
+      "node": "MFG-00141",
+      "bridge_without_hub": -335,
+      "betweenness": 0.0010344464025157027,
+      "total_degree": 62
+    },
+    {
+      "node": "RET-00043",
+      "bridge_without_hub": -332,
+      "betweenness": 0.0,
+      "total_degree": 20
+    },
+    {
+      "node": "RET-00006",
+      "bridge_without_hub": -332,
+      "betweenness": 0.0,
+      "total_degree": 20
+    },
+    {
+      "node": "RET-00066",
+      "bridge_without_hub": -311,
+      "betweenness": 0.0,
+      "total_degree": 19
+    }
+  ]
+}

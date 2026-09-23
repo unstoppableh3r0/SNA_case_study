@@ -1,0 +1,94 @@
+{
+  "experiment_A_hub_recovery": {
+    "planted_hubs": [
+      "MFG-00131",
+      "DST-00116",
+      "DST-00147",
+      "MFG-00141",
+      "MFG-00028"
+    ],
+    "top_n": 20,
+    "recovered_by_total_degree": [
+      "MFG-00131",
+      "DST-00116",
+      "DST-00147",
+      "MFG-00141",
+      "MFG-00028"
+    ],
+    "recovery_rate_total_degree": 1.0,
+    "recovered_by_pagerank": [],
+    "recovery_rate_pagerank": 0.0,
+    "recovered_by_betweenness": [
+      "MFG-00131",
+      "DST-00116",
+      "DST-00147"
+    ],
+    "recovery_rate_betweenness": 0.6
+  },
+  "experiment_B_bridge_recovery": {
+    "planted_bridges": [
+      "DST-00010",
+      "DST-00020",
+      "LOG-00026",
+      "LOG-00007",
+      "DST-00115",
+      "DST-00033",
+      "LOG-00059",
+      "LOG-00084",
+      "DST-00102",
+      "DST-00042"
+    ],
+    "top_n": 30,
+    "recovered_bridges": [],
+    "recovery_rate": 0.0,
+    "note": "0/10 planted bridges found in top-30 betweenness"
+  },
+  "experiment_C_community_recovery": {
+    "ari": null,
+    "nmi": null,
+    "note": "sklearn not available for evaluation"
+  },
+  "experiment_D_dependency_recovery": {
+    "dependency_group_results": [
+      {
+        "group_id": "DEP-001",
+        "upstream_manufacturer": "MFG-00112",
+        "planted_suppliers": 5,
+        "connected_suppliers": 5,
+        "connectivity_rate": 1.0,
+        "upstream_pagerank_rank": 228
+      },
+      {
+        "group_id": "DEP-002",
+        "upstream_manufacturer": "MFG-00020",
+        "planted_suppliers": 5,
+        "connected_suppliers": 5,
+        "connectivity_rate": 1.0,
+        "upstream_pagerank_rank": 390
+      },
+      {
+        "group_id": "DEP-003",
+        "upstream_manufacturer": "MFG-00072",
+        "planted_suppliers": 5,
+        "connected_suppliers": 5,
+        "connectivity_rate": 1.0,
+        "upstream_pagerank_rank": 384
+      }
+    ],
+    "avg_connectivity_rate": 1.0
+  },
+  "experiment_E_critical_node_resilience": {
+    "nodes_removed": 5,
+    "fraction_removed": 0.005,
+    "lcc_before": 1000,
+    "lcc_after": 995,
+    "lcc_fraction_before": 1.0,
+    "lcc_fraction_after": 0.995,
+    "lcc_change": -5,
+    "efficiency_before": 0.37617047046835733,
+    "efficiency_after": 0.37232476938492914,
+    "efficiency_change": -0.003845701083428188,
+    "components_before": 1,
+    "components_after": 1
+  }
+}

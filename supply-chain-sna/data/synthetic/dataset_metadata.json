@@ -1,0 +1,34 @@
+{
+  "dataset_id": "dataset-42-v1",
+  "seed": 42,
+  "dataset_version": "v1",
+  "generator_version": "1.0.0",
+  "generation_timestamp": "2026-09-23T09:57:37.946860Z",
+  "config_path": "config/default.yaml",
+  "network_size": 1000,
+  "edge_count": 7517,
+  "transaction_count": 446458,
+  "time_range": {
+    "start": "2024-01-01",
+    "months": 24
+  },
+  "organization_type_counts": {
+    "supplier": 300,
+    "distributor": 200,
+    "manufacturer": 150,
+    "retailer": 150,
+    "warehouse": 100,
+    "logistics_provider": 100
+  },
+  "regions": [
+    "North",
+    "South",
+    "East",
+    "West",
+    "Central"
+  ],
+  "planted_hubs": 5,
+  "planted_bridges": 10,
+  "planted_communities": 5,
+  "planted_dependency_groups": 3
+}

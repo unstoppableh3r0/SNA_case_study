@@ -1,0 +1,88 @@
+# Supply Chain SNA — Smoke Test Configuration
+# Small dataset for rapid pipeline validation
+
+seed: 42
+dataset_version: "v1-smoke"
+generator_version: "1.0.0"
+
+network:
+  organizations: 100
+  months: 3
+  start_date: "2024-01-01"
+  transactions_per_month_per_edge: 2
+  target_edges: 500
+
+organization_types:
+  supplier: 0.30
+  manufacturer: 0.15
+  distributor: 0.20
+  warehouse: 0.10
+  logistics_provider: 0.10
+  retailer: 0.15
+
+regions:
+  - North
+  - South
+  - East
+
+industries:
+  - Electronics
+  - Pharmaceuticals
+  - Automotive
+
+size_categories:
+  - Small
+  - Medium
+  - Large
+  - Enterprise
+
+products:
+  - Electronics_Components
+  - Raw_Chemicals
+  - Auto_Parts
+  - Finished_Electronics
+
+planted_structures:
+  num_hubs: 2
+  num_bridges: 3
+  num_communities: 3
+  num_dependency_groups: 1
+  hub_connectivity_multiplier: 4.0
+  bridge_inter_community_links: 2
+
+temporal:
+  organization_entry_rate: 0.02
+  organization_exit_rate: 0.01
+  relationship_new_rate: 0.03
+  relationship_drop_rate: 0.01
+  disruption_months: [2]
+  seasonal_peak_months: [1]
+
+resilience:
+  removal_fractions: [0.05, 0.10, 0.20]
+  random_seeds: [42, 123]
+
+centrality:
+  eigenvector_max_iter: 1000
+  eigenvector_tol: 1.0e-6
+  pagerank_alpha: 0.85
+  pagerank_max_iter: 1000
+  pagerank_tol: 1.0e-6
+  betweenness_normalized: true
+
+community:
+  algorithm: louvain
+  louvain_resolution: 1.0
+  random_state: 42
+
+dashboard:
+  max_nodes_display: 100
+  top_n_centrality: 10
+
+output:
+  data_dir: "data/synthetic"
+  graph_dir: "data/processed"
+  reports_dir: "reports"
+  figures_dir: "reports/figures"
+  results_dir: "reports/results"
+  tables_dir: "reports/tables"
